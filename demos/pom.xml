@@ -6,4 +6,22 @@
   <packaging>war</packaging>
   <name>427demos</name>
   <description>427demos</description>
+  
+    <dependencies>
+    
+	    <dependency>
+	        <groupId>net.sourceforge.htmlunit</groupId>
+	        <artifactId>htmlunit</artifactId>
+	        <version>2.16</version>
+	    </dependency>
+	    
+	    <!-- junit -->
+	    <dependency>
+	        <groupId>junit</groupId>
+	        <artifactId>junit</artifactId>
+	        <version>4.11</version>
+	        <scope>test</scope>
+	    </dependency>
+	    
+    </dependencies>
 </project>
