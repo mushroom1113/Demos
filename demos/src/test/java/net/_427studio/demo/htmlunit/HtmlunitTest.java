@@ -3,6 +3,7 @@ package net._427studio.demo.htmlunit;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
@@ -27,4 +28,11 @@ public class HtmlunitTest {
         webClient.close();
     }
     
+    @Test
+    public void homePage_Browser() throws Exception {
+        final WebClient webClient = new WebClient(BrowserVersion.CHROME);
+        final HtmlPage page = webClient.getPage("http://page.zidafone.com/");
+        Assert.assertEquals("临时信息发布页", page.getTitleText());
+        webClient.close();
+    }
 }
