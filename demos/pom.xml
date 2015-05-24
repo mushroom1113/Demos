@@ -9,6 +9,24 @@
   
     <dependencies>
     
+    	<!-- WebMagic -->
+	    <dependency>
+		    <groupId>us.codecraft</groupId>
+		    <artifactId>webmagic-extension</artifactId>
+		    <version>0.5.2</version>
+		    <exclusions>
+			    <exclusion>
+			        <groupId>org.slf4j</groupId>
+			        <artifactId>slf4j-log4j12</artifactId>
+			    </exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+		    <groupId>us.codecraft</groupId>
+		    <artifactId>webmagic-extension</artifactId>
+		    <version>0.5.2</version>
+		</dependency>
+    
 		<!-- jsoup -->
 		<dependency>
 			<groupId>org.jsoup</groupId>
