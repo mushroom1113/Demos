@@ -19,6 +19,7 @@ public class MyPipeline implements Pipeline{
 		String title = resultItems.get("title");
 		System.out.println(title);
 		
+		//可以用获得到的links和title做点什么，来实现爬虫最终的目的，比如存入数据库
 	}
 
 }
